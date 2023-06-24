@@ -1,0 +1,274 @@
+* {
+  box-sizing: border-box;
+  color: azure;
+  font-family: 'Source Code Pro', monospace;
+}
+body{
+  background-image: url('https://th-i.thgim.com/public/sci-tech/energy-and-environment/qxouua/article53194004.ece/alternates/LANDSCAPE_1200/NOCTILUTA');
+}
+main {
+  display: flex;
+  width: 100vw;
+  height: 78vh;
+}
+#header {
+  display: flex;
+  justify-content: right;
+  height: 12%;
+  padding-right: 20px;
+      }
+.icon-bar {
+  margin-left: 20px;
+  position: relative;
+       }
+.icon-bar1 {
+          margin-left: 20px;
+          position: relative;
+               }
+
+#aside {
+  display: flex;
+  font-family: 'Source Code Pro', monospace;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+      }
+#aside2 {
+      
+  display: none;
+  font-family: 'Source Code Pro', monospace;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+  width: 50%;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+      }
+.details {
+  display: none;
+  padding: 5%;
+  font-family: 'Source Code Pro', monospace;
+  flex-direction:wrap;
+  align-items:center;
+  justify-content: center;
+  width: 50%;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+.details p {
+  color: #fbfbfb;
+}
+/*-----------------------------------*/
+.contact_form{	
+width: 460px; 
+height: auto;
+margin: 80px auto;
+border-radius: 10px;  
+padding-top: 30px;
+padding-bottom: 20px;  
+background-color: #fbfbfb; 
+padding-left: 30px; 
+}
+
+
+input{
+  color: black;
+background-color: #fbfbfb; 
+width: 408px; 
+height: 40px; 
+border-radius: 5px;  
+border-style: solid; 
+border-width: 1px; 
+border-color: #ab4493; 
+margin-top: 10px;  
+padding-left: 10px;
+margin-bottom: 20px; 
+}
+
+
+textarea{
+background-color: #fbfbfb; 
+width: 405px; 
+height: 150px; 
+border-radius: 5px;  
+border-style: solid; 
+border-width: 1px; 
+border-color: #ab4493; 
+margin-top: 10px;  
+padding-left: 10px;
+margin-bottom: 20px; 
+padding-top: 15px; 
+}
+
+
+label{
+display: block; 
+float: center; 	
+}
+
+
+button{
+height: 45px; 
+padding-left: 5px;
+padding-right: 5px; 	
+margin-bottom: 20px; 
+margin-top: 10px; 	
+text-transform: uppercase;
+background-color: #000000; 
+border-color: #ffffff; 
+border-style: solid; 
+border-radius: 10px;	
+width: 405px;   
+cursor: pointer;
+}
+
+
+button p{
+color: #fff; 
+}
+
+
+span{
+color: #ab4493; 
+}
+
+
+.aviso{
+font-size: 13px;  
+color: #ffffff;  
+}
+
+
+
+p{
+font-size: 14px; 
+color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+outline:0;
+border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+outline:0;
+border: 1px solid #97d848;
+  height: 100px;
+}         
+      
+/*-------------------------------------*/
+#image {
+  display: flex;
+  width: 50%;
+  align-content: center;
+}
+
+#image img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+object-position: center;
+  }
+#footer {
+  display: flex;
+  height: 10%;
+  width: 100%;
+  padding-top: 1%;
+  padding-left: 10%;
+  padding-right: 5%;
+}
+#social {
+  display: flex;
+  list-style: none; 
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+a {
+  text-decoration: none;
+}
+.logo {	
+  text-decoration: none;
+  position: relative; 
+
+}
+
+.logo::before {
+  content: ""; /* Agrega un elemento pseudo antes del contenido */
+  position: absolute; /* Establece la posición absoluta dentro del contenedor */
+  top: -5px; /* Ajusta la posición del borde con respecto al elemento */
+  left: -5px; /* Ajusta la posición del borde con respecto al elemento */
+  width: calc(100% + 10px); /* Calcula el ancho del borde para ser ligeramente más grande */
+  height: calc(100% + 10px); /* Calcula el alto del borde para ser ligeramente más grande */
+  border-radius: 8px; /* Puntas ligeramente redondeadas */
+  box-shadow: 0 0 0 2px white; /* Agrega una sombra alrededor del elemento */
+  opacity: 0; /* Inicialmente oculta el borde */
+  transition: opacity 0.3s ease; /* Transición suave de la opacidad */
+}
+
+.logo:hover::before {
+  opacity: 1; /* Muestra el borde al hacer hover */
+}
+
+.icon-bar::before, .icon-bar1::before {
+  content: "";
+position: absolute;
+top: -3px;
+left: -3px;
+width: calc(100% + 6px);
+height: calc(100% + 6px);
+border-radius: 8px;
+border: 2px solid transparent;
+transition: border-color 0.3s ease;
+}
+
+.icon-bar:hover::before, .icon-bar1:hover::before {
+  border-color: white;
+}
+
+#nombre, #email, #mensaje {
+  color: black!important;
+}
+
+@media screen and (max-width: 767px) {
+  /* Agrega aquí los estilos específicos para pantallas medianas */
+
+#main {
+
+flex-wrap: wrap;
+}
+
+#aside { 
+width: 80%;
+padding-left: 8%;
+}
+#aside2{
+  width: 100%;
+
+}
+.details{
+  width: 100%;
+
+}
+#image {
+position: fixed;
+width: 60px;
+top:2%;
+left: 5%;
+}
+
+
+}
