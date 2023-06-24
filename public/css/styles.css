@@ -269,6 +269,9 @@ width: 60px;
 top:2%;
 left: 5%;
 }
+input, textarea, button {
 
+  width: 390px
+}
 
 }
